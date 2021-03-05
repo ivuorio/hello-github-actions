@@ -7,9 +7,9 @@ inputs:
     description: "Who to greet"
     required: true
     default: "Test"
-  runs:
-    using: "docker"
-    image: "Dockerfile"
-  branding:
-    icon: "mic"
-    color: "red"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "mic"
+  color: "red"

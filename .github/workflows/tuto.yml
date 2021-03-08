@@ -1,4 +1,4 @@
-name: workflow for my test file
+name: workflow for my test file in docker in docker
 on: push
 jobs:
   build:
@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: ./action-a
     - name: Test with pytest
       run: |
-          pytest
+          python -m pytest

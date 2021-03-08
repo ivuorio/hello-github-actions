@@ -1,4 +1,6 @@
 FROM debian:9.5-slim
 
-RUN apt install python3
-RUN pip install pytest
+RUN apt-get update
+RUN apt-get install -y python3
+RUN apt-get install -y python3-pip
+RUN python3 -m pip install pytest

@@ -1,0 +1,11 @@
+name: workflow for my test file
+on: push
+jobs:
+  build:
+    name: Test action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test with pytest
+      run: |
+          pytest

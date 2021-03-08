@@ -1,5 +1,4 @@
-FROM debian:9.5-slim
-
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+# Get the python 3.8 base docker image
+FROM python:3.8
+# Install pipenv
+RUN pip install pytest

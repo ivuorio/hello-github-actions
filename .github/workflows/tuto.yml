@@ -7,6 +7,3 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ./action-a
-    - name: Test with pytest
-      run: |
-          pytest

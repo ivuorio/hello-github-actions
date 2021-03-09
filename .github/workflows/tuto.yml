@@ -9,4 +9,4 @@ jobs:
     - uses: ./action-a
     - name: Test with pytest
       run: |
-          python3 -m pytest
+          pytest

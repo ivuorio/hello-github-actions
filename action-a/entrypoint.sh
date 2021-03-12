@@ -6,4 +6,4 @@ python3 -m pytest
 echo "test done!"
 
 echo "test secrets"
-python3 string_manager $secrets.TOP_SECRET
+python3 string_manager.py $secrets.TOP_SECRET

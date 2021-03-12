@@ -10,7 +10,7 @@ inputs:
   TOP_SECRET:
     description: "secret from git"
     required: true
-    default: {{secrets.TOP_SECRET}}
+    default: "NOT GIVEN"
 runs:
   using: "docker"
   image: "Dockerfile"

@@ -7,6 +7,10 @@ inputs:
     description: "Who to greet"
     required: true
     default: "Test"
+  TOP_SECRET:
+    description: "secret from git"
+    required: true
+    default: {{secrets.TOP_SECRET}}
 runs:
   using: "docker"
   image: "Dockerfile"

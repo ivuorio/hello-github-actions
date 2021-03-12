@@ -8,4 +8,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ./action-a
       with: 
-        TOP_SECRET: {{secrets.TOP_SECRET}}
+        TOP_SECRET: ${{secrets.TOP_SECRET}}
